@@ -1,5 +1,4 @@
-# InDeep : 3D convolutional neural networks to assist in silico drug design 
-on protein-protein interactions 
+# InDeep : 3D convolutional neural networks to assist in silico drug design on protein-protein interactions 
 
 ## Description
 
@@ -10,6 +9,12 @@ The scores associated with those values can also be monitored along a MD analysi
 These predictions can be visualised easily.
 
 ## Setup
+
+### Getting the weights
+You can download the wights used for the neural network prediction through this link :
+https://mega.nz/file/mEVQUJwR#tqLX-UGo3a8yORmQJB9tYxx7teXF3PyEUBbyVYEnCt0
+
+You should copy them to a directory named ROOT_OF_PROJECT/results/weights/HPO/
 
 ### Packages
 
@@ -38,7 +43,7 @@ To setup the PyMol plugin, just activate your environment and type pymol in the
 commandline to launch PyMol.
 Then click on the tab *Plugin* and *Plugin Manager* and on the window that pops, click on the tab *Settings*
 In this tab, one can *Add new directory...* and select :
-```ROOT_OF_PROJECT/DeepInterface/DeepPPI_pymol_script```
+```ROOT_OF_PROJECT/DeepPPI_pymol_script```
 
 Finally, one should quit PyMol and relaunch it by running pymol in the command line.
 In the tab *Plugin*, there should be a new plugin : *deepPPI Plugin* that one can use directly.
