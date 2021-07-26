@@ -1,0 +1,42 @@
+[common]
+drate = 0.3
+filters = {{common_filters}}
+in_size = 5
+wenveloppe = 0.02
+
+[pl]
+drate = {{pl_drate}}
+filters = {{pl_filters}}
+wpl = 0.03
+
+[hd]
+drate = 0.35
+filters = {{hd_filters}}
+connected = False
+whd = 0.03
+
+[connected]
+drate = 0.1
+filters = [9, 9]
+
+[argparse]
+num_epochs = 15
+print_each = 1000
+batch_size = 20
+data = 20210219_PLHD-database_train.hdf5
+name = Pasteur-HPO-7818b5b8e5b23fbf
+ini = Pasteur-HPO-7818b5b8e5b23fbf
+weights = None
+abort = None
+device = 0
+early = 5
+use_unet = True
+use_old_unet = False
+out_channels = 32
+model_depth = 4
+double_conv = True
+num_feature_map = 8
+
+[best_weights]
+path = ../results/weights/HPO/cp-0011.ckpt
+
